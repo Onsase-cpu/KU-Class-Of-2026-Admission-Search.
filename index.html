@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Kenyatta University KUCCPS Admission Verification Portal for the 2022/2023 September Intake. Search student admission records using admission number or student name.">
+
+<meta
+name="author"
+content="Vincent Onsase Omare">
+
+<meta
+name="keywords"
+content="
+Kenyatta University,
+KUCCPS,
+Admission,
+Student Portal,
+Admission Verification,
+2022 2023 Intake">
+
+<title>
+Kenyatta University | KUCCPS Admission Portal
+</title>
+
+<link
+rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+
+
+<div class="page-wrapper">
+
+<header class="header">
+
+<div class="brand">
+
+<img
+src="logo.png"
+alt="Kenyatta University Logo"
+class="logo">
+
+<div>
+
+<h1>
+KENYATTA UNIVERSITY
+</h1>
+
+<p>
+KUCCPS Admission Verification Portal
+</p>
+
+<span>
+September 2022 Intake
+</span>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<section class="search-container">
+
+<h2>
+Search Admission Record
+</h2>
+
+
+<div class="search-mode">
+
+<label>
+
+<input
+type="radio"
+name="searchType"
+value="admission"
+checked>
+
+Search by Admission Number
+
+</label>
+
+
+<label>
+
+<input
+type="radio"
+name="searchType"
+value="name">
+
+Search by Student Name
+
+</label>
+
+</div>
+
+
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Enter admission number or student name">
+
+<button
+id="searchBtn">
+
+Search
+
+</button>
+
+</div>
+
+
+
+<div class="search-info">
+
+Examples:
+I90/0816/2022
+or
+Onsase
+
+</div>
+
+</section>
+
+
+
+
+
+<section
+id="multipleResults"
+class="results-list">
+
+</section>
+
+
+
+
+
+<section
+id="studentCard"
+class="student-card">
+
+<div class="card-top">
+
+<h2>
+Student Found
+</h2>
+
+<div class="status">
+Verified
+</div>
+
+</div>
+
+
+
+<table>
+
+<tr>
+<td>S.No</td>
+<td id="serial"></td>
+</tr>
+
+<tr>
+<td>Student Name</td>
+<td id="studentName"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td id="gender"></td>
+</tr>
+
+<tr>
+<td>Admission Number</td>
+<td id="admission"></td>
+</tr>
+
+<tr>
+<td>Programme</td>
+<td id="programme"></td>
+</tr>
+
+<tr>
+<td>School</td>
+<td id="school"></td>
+</tr>
+
+<tr>
+<td>Campus</td>
+<td id="campus"></td>
+</tr>
+
+<tr>
+<td>Cluster Points</td>
+<td id="cluster"></td>
+</tr>
+
+<tr>
+<td>Intake</td>
+<td id="intake"></td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+
+
+<section
+id="notFound"
+class="not-found">
+
+<h2>
+No Matching Student Record Found
+</h2>
+
+<p>
+
+Check the admission number
+or search using student name.
+
+</p>
+
+</section>
+
+
+
+
+
+<footer>
+
+<div>
+
+Made by
+
+<strong>
+
+Vincent Onsase Omare
+
+</strong>
+
+</div>
+
+<div>
+
+vincentonsase003@gmail.com
+
+</div>
+
+</footer>
+
+
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js">
+</script>
+
+<script
+src="script.js">
+</script>
+
+</div>
+
+</body>
+
+</html>
+```
